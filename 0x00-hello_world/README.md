@@ -15,3 +15,4 @@ Projects done during Fullstack Software Engineering at [**Alx School**](https://
 | [`3-name`](3-name) | Compiles a C file and creates an executable named `cisfun` |
 | [`4-puts.c`](4-puts.c) | Prints exactly `"Programming is like building a multilingual puzzle"` |
 | [`5-printf.c`](5-printf.c) | Prints exactly `with proper grammar, but the outcome is a piece of art` |
+| [`6-size.c`](6-size.c) | Prints the size of various types on the computer it is compiled |
