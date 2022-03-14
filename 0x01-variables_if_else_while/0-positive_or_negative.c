@@ -2,12 +2,11 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
-/* prints out statement depending on the generated int 
- *  prints n is postive, if n is a positive integer
- * prints n is negatve, if n is a negative integer
- * prints n is zero, if n eqals zero
-*/
+/**
+ * main - Determines if a number is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
