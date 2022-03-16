@@ -1,30 +1,32 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_sign - Determines if the input number
- * greater, iqual or less than zero.
- *
- * @n: The input number as an integer.
- *
- * Return: 1 is greater than zero. 0 is zero.
- * -1 is less than zero.
+ * print_sign - Check Holberton
+ * @n: An input number
+ * Description: Tohis function prints the sign of the number
+ * Return: 1 if number is positive, o if number is 0, or
+ * -1 if number is negative
  */
 int print_sign(int n)
 {
+	int value;
+
 	if (n > 0)
 	{
-		_putchar(43);
-		return (1);
+		value = 1;
+		_putchar('+');
 	}
-	else if (n < 0)
+	else if (n == 0)
 	{
-		_putchar(45);
-		return (-1);
+		value = 0;
+		_putchar('0');
 	}
 	else
 	{
-		_putchar(48);
-		return (0);
+		value = -1;
+		_putchar('-');
 	}
-	_putchar('\n');
+
+	return (value);
 }
+
