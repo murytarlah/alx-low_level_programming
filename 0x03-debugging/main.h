@@ -1,5 +1,5 @@
-#ifndef _main_h_
-#define _main_h_
+#ifndef main_h
+#define main_h
 
 void positive_or_negative(int n);
 
