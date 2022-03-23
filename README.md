@@ -1,4 +1,4 @@
-# Low Level Programming 
+# Low Level Programming and Algorithms 
 Projects done during Fullstack Software Engineering at [**Alx School**](https://www.alxafrica.com/)
 
 ## Technologies
