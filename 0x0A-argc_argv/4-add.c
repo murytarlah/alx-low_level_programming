@@ -20,17 +20,17 @@ int main(int argc, char *argv[])
 
 		int no = argc - 1;
 
-		while (no > 1)
+		while (no > 0)
 		{
-			for (int i = 0; argv[argc][i] != '\0'; i++)
+			for (int i = 0; argv[no][i] != '\0'; i++)
 			{
 
-				if (!isdigit(argv[argc][i]))
+				if (!isdigit(argv[no][i]))
 				{
 					printf("Error\n");
 					return (1);
 				}
-				total += argv[argc]
+				total += argv[no]
 			}
 			no--;
 		}
