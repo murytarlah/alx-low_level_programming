@@ -18,20 +18,18 @@ int main(int argc, char *argv[])
 	{
 		int total = 0;
 
-		int no = argc - 1;
-
-		while (no > 0)
+		while (argc > 1)
 		{
-			for (int i = 0; argv[no][i] != '\0'; i++)
+			for (int i = 0; argv[argc][i] != '\0'; i++)
 			{
 
-				if (!isdigit(argv[no][i]))
+				if (!isdigit(argv[argc][i]))
 				{
 					printf("Error\n");
 					return (1);
 				}
-				total += argv[no]
 			}
+			total += argv[argc]
 			no--;
 		}
 		printf("%d\n", total);
