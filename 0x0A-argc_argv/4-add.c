@@ -9,20 +9,20 @@
 
 int main(int argc, char *argv[])
 {
-	int total = 0;
+	int total = 0, count = argc - 1;
 
-	while (argc > 1)
+	while (count > 0)
 	{
-		for (int i = 0; argv[argc][i] != '\0'; i++)
+		for (int i = 0; argv[count][i] != '\0'; i++)
 		{
-			if (!isdigit(argv[argc][i]))
+			if (!isdigit(argv[count][i]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		total += argv[argc]
-		argc--;
+		total += argv[count]
+		count--;
 	}
 	printf("%d\n", total);
 	return (0);
