@@ -1,99 +1,38 @@
 #include "main.h"
 
 /**
- * main - prints the minimum no of coins to make a change.
+ * main - prints the minimum number of coins to make change for an amount.
+ * of money.
  * @argc: number of command line arguments.
  * @argv: array that contains the program command line arguments.
- * @calculate_quarters: return number of quarters coin.
- * @calculate_dimes: gets the number of dimes coin.
- * @calculate_nickels: gets the number of nickels coin.
- * @calculate_pennies: gets the number of pennies coin.
  * Return: 0 - success.
  */
 int main(int argc, char *argv[])
 {
-	int coins = 0, cents = argv[1];
+	int cents, ncoins = 0;
 
-	if (argc != 2)
+	if (argc == 1 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (cents == 0)
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		printf("%i\n", coins);
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		ncoins += 1;
 	}
-	else
-	{
-
-		int quarters = calculate_quarters(cents);
-
-		cents -= quarters * 25;
-
-		int dimes = calculate_dimes(cents);
-
-		cents = cents - dimes * 10;
-
-		int nickels = calculate_nickels(cents);
-
-		cents = cents - nickels * 5;
-
-		int pennies = calculate_pennies(cents);
-
-		cents = cents - pennies * 1;
-
-		coins += quarters + dimes + nickels + pennies;
-
-	}
-	printf("%i\n", coins);
+	printf("%d\n", ncoins);
 	return (0);
-}
-
-
-int calculate_quarters(int cents)
-{
-	int count = 0;
-
-	while (cents >= 25)
-	{
-		cents = cents - 25;
-		count++;
-	}
-	return (count);
-}
-
-int calculate_dimes(int cents)
-{
-	int count = 0;
-
-	while (cents >= 10)
-	{
-		cents = cents - 10;
-		count++;
-	}
-	return (count);
-}
-
-int calculate_nickels(int cents)
-{
-	int count = 0;
-
-	while (cents >= 5)
-	{
-		cents = cents - 5;
-		count++;
-	}
-	return (count);
-}
-
-int calculate_pennies(int cents)
-{
-	int count = 0;
-
-	while (cents >= 1)
-	{
-		cents = cents - 1;
-		count++;
-	}
-	return (count);
 }
