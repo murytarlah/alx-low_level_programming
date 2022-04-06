@@ -9,30 +9,21 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 1)
-	{
-		printf("%d\n", 0);
-		return (0);
-	}
-	else
-	{
-		int total = 0;
+	int total = 0;
 
-		while (argc > 1)
+	while (argc > 1)
+	{
+		for (int i = 0; argv[argc][i] != '\0'; i++)
 		{
-			for (int i = 0; argv[argc][i] != '\0'; i++)
+			if (!isdigit(argv[argc][i]))
 			{
-
-				if (!isdigit(argv[argc][i]))
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-			total += argv[argc]
-			no--;
 		}
-		printf("%d\n", total);
-		return (0);
+		total += argv[argc]
+		argc--;
 	}
+	printf("%d\n", total);
+	return (0);
 }
