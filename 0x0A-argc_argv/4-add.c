@@ -18,7 +18,9 @@ int main(int argc, char *argv[])
 	{
 		int total = 0;
 
-		while (argc > 1)
+		int no = argc - 1;
+
+		while (no > 1)
 		{
 			if (isdigit(argv[argc]))
 			{
@@ -29,7 +31,7 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			argc--;
+			no--;
 		}
 		printf("%d\n", total);
 		return (0);
