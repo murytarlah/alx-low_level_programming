@@ -14,6 +14,11 @@ int main(int argc, char *argv[])
 {
 	int coins = 0, cents = argv[1];
 
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	if (cents == 0)
 	{
 		printf("%i\n", coins);
