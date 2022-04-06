@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		total += argv[count]
+		total += atoi(argv[count])
 		count--;
 	}
 	printf("%d\n", total);
