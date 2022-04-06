@@ -22,14 +22,15 @@ int main(int argc, char *argv[])
 
 		while (no > 1)
 		{
-			if (isdigit(argv[argc]))
+			for (int i = 0; argv[argc][i] != '\0'; i++)
 			{
-				total += atoi(argv[argc]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
+
+				if (!isdigit(argv[argc][i]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+				total += argv[argc]
 			}
 			no--;
 		}
