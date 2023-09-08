@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	int i,e;
+	int i, e;
 
 	i = 48;
 	e = 48;
-	
+
 	while (i < 58)
 	{
 		while (e < 58)

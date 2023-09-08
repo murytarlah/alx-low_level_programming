@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	int i,e, j;
+	int i, e, j;
 
 	i = 48;
 	e = 48;
     j = 48;
-	
+
 	while (i < 58)
 	{
 		while (e < 58)
