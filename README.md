@@ -1,0 +1,17 @@
+# Low Level Programming and Algorithms
+
+Projects done during Fullstack Software Engineering at [**Alx School**](https://www.alxafrica.com/)
+
+## Technologies
+
+-   Scripts written in [Bash 5.1](https://www.gnu.org/software/bash/)
+-   Tested on [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop)
+-   Language used `C` and compiled using `gcc` compiler
+
+## Projects
+
+All of the following folders are projects done during the studies:
+
+| Project name                         | Description                                                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [0x00-hello_world](0x00-hello_world) | It aims to learn about what is entry point, basics commands (puts, printf, putchar), compilation process with `gcc` in `C` language. |
