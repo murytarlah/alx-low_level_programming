@@ -17,7 +17,7 @@ void jack_bauer(void)
 	while (h1 <= 2)
 	{
 		h2 = 0;
-		if(h1 == 2 )
+		if (h1 == 2)
 		{
 			a = 3;
 		};
