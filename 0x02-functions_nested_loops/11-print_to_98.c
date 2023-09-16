@@ -2,11 +2,12 @@
 
 /**
  * print_to_98 - prints from n to 98
- * @n: number to start from 
+ * @n: number to start from
  *
  * Return: 0
  */
-void print_to_98(int n){
+void print_to_98(int n)
+{
 	if (n == 98)
 	{
 		printf("%i", n);
@@ -15,7 +16,7 @@ void print_to_98(int n){
 	{
 		while (n <= 98)
 		{
-			printf("%i ", n);
+			printf("%i, ", n);
 			n++;
 		}
 	}
@@ -23,7 +24,7 @@ void print_to_98(int n){
 	{
 		while (n >= 98)
 		{
-			printf("%i ", n);
+			printf("%i, ", n);
 			n--;
 		}
 	}
