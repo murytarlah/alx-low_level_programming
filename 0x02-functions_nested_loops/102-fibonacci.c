@@ -7,17 +7,20 @@
  */
 int main(void)
 {
-	int a = 1, b = 2, d = 0, c = 2;
+	int count = 0; 
+	unsigned long long a = 0, b = 1, c = 0;
 
-	printf("%d, %d, ", a, b);
-
-	while (c < 50)
+	while (count < 50)
 	{
-		d = a + b;
-		printf("%d, ", d);
+		c = a + b;
+		printf("%llu", c);
 		a = b;
-		b = d;
-		c++;
+		b = c;
+		if (count < 49)
+		{
+			printf(", ");
+		}
+		count++;
 	}
 	printf("\n");
 	return (0);
