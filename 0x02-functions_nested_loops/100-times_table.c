@@ -17,11 +17,11 @@
 
 void n_times_table(int n)
 {
-	int rep;
+	int a, b,  rep;
 
-	for (int a = 0; a <= n; a++)
+	for (a = 0; a <= n; a++)
 	{
-		for (int b = 0; b <= n; b++)
+		for (b = 0; b <= n; b++)
 		{
 			rep = a * b;
 			if (b == 0)
