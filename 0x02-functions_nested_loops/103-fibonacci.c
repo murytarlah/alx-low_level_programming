@@ -7,20 +7,18 @@
  */
 int main(void)
 {
-	int count = 0;
 	unsigned long a = 0, b = 1, c = 0, sum = 0;
 
-	while (count < 50)
+	while (c < 4000000)
 	{
 		c = a + b;
 		a = b;
 		b = c;
 
-		if (c % 2 == 0)
+		if (c % 2 == 0 )
 		{
 			sum += c;
 		}
-		count++;
 	}
 	printf("%lu\n", sum);
 	return (0);
