@@ -16,13 +16,12 @@ int main(void)
 		a = b;
 		b = c;
 
-        if (c % 2 == 0)
-        {
-            sum += c;
-        }
-        
+		if (c % 2 == 0)
+		{
+			sum += c;
+		}
 		count++;
 	}
-	printf("\n");
+	printf("%lu\n", sum);
 	return (0);
 }
