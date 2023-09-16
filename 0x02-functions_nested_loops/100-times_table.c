@@ -58,7 +58,7 @@ void n_times_table(int n)
 
 void print_times_table(int n)
 {
-	if (n >	 0 && n	 <= 15)
+	if (n >= 0 && n	 <= 15)
 	{
 		n_times_table(n);
 	}
