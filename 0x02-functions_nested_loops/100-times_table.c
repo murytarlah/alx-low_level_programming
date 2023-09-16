@@ -7,7 +7,16 @@
  * Return:void
  */
 
-void n_times_table(int n){
+
+/**
+ * n_times_table - prints n times table
+ * @n: the argument to print it's time table
+ *
+ * Return:void
+ */
+
+void n_times_table(int n)
+{
 	int a = 0, b, rep;
 
 	while (a <= n)
