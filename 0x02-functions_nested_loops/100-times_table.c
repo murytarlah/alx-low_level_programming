@@ -9,7 +9,7 @@
 
 
 /**
- * n_times_table - prints n times table
+ * n_times_table - generates the n times table when n is between 0 and 15
  * @n: the argument to print it's time table
  *
  * Return:void
@@ -17,18 +17,16 @@
 
 void n_times_table(int n)
 {
-	int a = 0, b, rep;
+	int rep;
 
-	while (a <= n)
+	for (int a = 0; a <= n; a++)
 	{
-		b = 0;
-		while (b <= n)
+		for (int b = 0; b <= n; b++)
 		{
 			rep = a * b;
 			if (b == 0)
-			{
 				_putchar('0' + rep);
-			}
+			
 			else if (rep < 10)
 			{
 				_putchar(' ');
@@ -42,7 +40,7 @@ void n_times_table(int n)
 				_putchar('0' + rep % 10);
 			}
 			else
-			{
+			{	
 				_putchar('0' + rep / 100);
 				_putchar('0' + (rep - 100) / 10);
 				_putchar('0' + rep % 10);
@@ -53,20 +51,15 @@ void n_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 			}
-			b++;
 		}
 		_putchar('\n');
-		a++;
 	}
 }
 
 void print_times_table(int n)
 {
-	if (n < 0 || n > 15)
+	if (n >	 0 || n	 <= 15)
 	{
-		return;
-	}
-	else{		
 		n_times_table(n);
 	}
 }
