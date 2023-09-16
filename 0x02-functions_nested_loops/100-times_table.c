@@ -7,8 +7,9 @@
  * Return:void
  */
 
-void n_times_table(int n, int a, int b, int rep)
-{
+void n_times_table(int n){
+	int a = 0, b, rep;
+
 	while (a <= n)
 	{
 		b = 0;
@@ -57,8 +58,6 @@ void print_times_table(int n)
 		return;
 	}
 	else{		
-		int a = 0, b, rep;
-
-		n_times_table(n, a, b, rep);
+		n_times_table(n);
 	}
 }
