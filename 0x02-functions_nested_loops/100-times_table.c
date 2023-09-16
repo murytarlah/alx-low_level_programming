@@ -1,20 +1,11 @@
 #include "main.h"
 
 /**
- * print_times_table - prints n times table
- * @n: the argument to print it's time table
- *
- * Return:void
- */
-
-
-/**
  * n_times_table - generates the n times table when n is between 0 and 15
  * @n: the argument to print it's time table
  *
  * Return:void
  */
-
 void n_times_table(int n)
 {
 	int a, b,  rep;
@@ -56,9 +47,15 @@ void n_times_table(int n)
 	}
 }
 
+/**
+ * print_times_table - prints n times table
+ * @n: the argument to print it's time table
+ *
+ * Return:void
+ */
 void print_times_table(int n)
 {
-	if (n >= 0 && n	 <= 15)
+	if (n > 0 && n	 <= 15)
 	{
 		n_times_table(n);
 	}
